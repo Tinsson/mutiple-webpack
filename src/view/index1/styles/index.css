@@ -1,0 +1,6 @@
+.header {
+  color: #0060BC;
+  transition: all .3s ease;
+  display: flex;
+  font-size: 20px;
+}

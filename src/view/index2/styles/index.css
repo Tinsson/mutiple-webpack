@@ -1,0 +1,5 @@
+.header {
+  color: blue;
+  transition: all .3s ease;
+  display: flex;
+}

@@ -1,0 +1,55 @@
+{
+  "name": "webpack-mutiple",
+  "description": "A Vue.js project",
+  "author": "agileago <agileago@gmail.com>",
+  "version": "0.0.1",
+  "private": true,
+  "vendor": [
+    "animejs",
+    "vue",
+    "es6-promise",
+    "weui"
+  ],
+  "scripts": {
+    "dev": "node build/server.js",
+    "build": "webpack --hide-modules --config build/webpack.prod.js && ncp lib dist/lib && gulp",
+    "vendor": "rm -rf lib/vendor && webpack --config build/webpack.dll.js",
+    "cplib": "ncp lib dist/lib"
+  },
+  "dependencies": {
+    "animejs": "^2.0.2",
+    "es6-promise": "^4.1.1",
+    "vue": "^2.4.2",
+    "vux": "^2.5.3",
+    "weui": "^1.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "connect-history-api-fallback": "^1.3.0",
+    "css-loader": "^0.28.4",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "gulp": "^3.9.1",
+    "gulp-rev-hash3": "^1.0.9",
+    "html-webpack-plugin": "^2.29.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "ncp": "^2.0.0",
+    "postcss-loader": "^1.3.3",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^12.2.2",
+    "vue-template-compiler": "^2.4.2",
+    "vux-loader": "^1.1.2",
+    "webpack": "^3.3.0",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-hot-middleware": "^2.18.2"
+  }
+}
